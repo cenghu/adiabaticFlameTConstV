@@ -219,7 +219,7 @@ int main(int argc, char *argv[])
         Info<< "gamma = " << gamma << nl << endl;
         scalar Tad = products.THa(reactants.Ha(P, T0), P, 1000.0);
         Info<< "Tad = " << Tad << nl << endl;
-*/
+*///
 		scalar Ha =  reactants.Ha(P, T0);
         Info<< "Ha = " << Ha << nl << endl;
 
