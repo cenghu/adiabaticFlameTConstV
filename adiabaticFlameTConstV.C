@@ -209,6 +209,7 @@ int main(int argc, char *argv[])
 
         Info<< "products " << (1/products.Y())*products << ';' << endl;
 
+// 185000 [J/kg] is the heat of combustion of wood dust
         scalar TadSE = products.TEs(185000, P, 1000.0);
         Info<< "TadSE = " << TadSE << nl << endl;
 
