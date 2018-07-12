@@ -45,6 +45,7 @@ Description
 #include "thermo.H"
 #include "janafThermo.H"
 #include "absoluteEnthalpy.H"
+#include "sensibleEnthalpy.H"
 #include "sensibleInternalEnergy.H"
 
 using namespace Foam;
@@ -214,6 +215,9 @@ int main(int argc, char *argv[])
         Info<< "Tad = " << Tad << nl << endl;
         scalar TadSenH = products.THs(reactants.Ha(P, T0), P, 1000.0);
         Info<< "TadSenH = " << TadSenH << nl << endl;
+// 185000 [J/kg] is the heat of combustion of wood dust
+        scalar TadSE = products.TEs(185000, P, 1000.0);
+        Info<< "TadSE = " << TadSE << nl << endl;
 
     }
 
