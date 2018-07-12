@@ -293,7 +293,5 @@ $(WM_PROJECT_DIR)/src/thermophysicalModels/specie/lnInclude/janafThermo.H \
 $(WM_PROJECT_DIR)/src/thermophysicalModels/specie/lnInclude/janafThermoI.H \
 $(WM_PROJECT_DIR)/src/thermophysicalModels/specie/lnInclude/janafThermo.C \
 $(WM_PROJECT_DIR)/src/thermophysicalModels/specie/lnInclude/absoluteEnthalpy.H \
-$(WM_PROJECT_DIR)/src/thermophysicalModels/specie/lnInclude/sensibleInternalEnergy.H \
-$(WM_PROJECT_DIR)/src/thermophysicalModels/specie/lnInclude/sensibleEnthalpy.H \
 
 
