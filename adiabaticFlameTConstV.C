@@ -44,9 +44,7 @@ Description
 #include "perfectGas.H"
 #include "thermo.H"
 #include "janafThermo.H"
-//#include "absoluteEnthalpy.H"
 #include "sensibleInternalEnergy.H"
-//#include "sensibleEnthalpy.H"
 
 using namespace Foam;
 
@@ -210,16 +208,7 @@ int main(int argc, char *argv[])
         );
 
         Info<< "products " << (1/products.Y())*products << ';' << endl;
-/*
-        scalar TadSE = products.TEs(185000, P, 1000.0);
-        Info<< "TadSE = " << TadSE << nl << endl;
-		scalar Cv = products.Cv(P, TadSE);
-        Info<< "CvSE = " << Cv << nl << endl;
-		scalar gamma = products.gamma(P, TadSE);
-        Info<< "gamma = " << gamma << nl << endl;
-        scalar Tad = products.THa(reactants.Ha(P, T0), P, 1000.0);
-        Info<< "Tad = " << Tad << nl << endl;
-*/
+
         scalar Tad = products.THs(reactants.Ha(P, T0), P, 1000.0);
         Info<< "Tad = " << Tad << nl << endl;
 
