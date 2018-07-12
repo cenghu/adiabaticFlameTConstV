@@ -45,8 +45,8 @@ Description
 #include "thermo.H"
 #include "janafThermo.H"
 #include "absoluteEnthalpy.H"
-#include "sensibleInternalEnergy.H"
-#include "sensibleEnthalpy.H"
+//#include "sensibleInternalEnergy.H"
+//#include "sensibleEnthalpy.H"
 
 using namespace Foam;
 
@@ -220,7 +220,7 @@ int main(int argc, char *argv[])
         scalar Tad = products.THa(reactants.Ha(P, T0), P, 1000.0);
         Info<< "Tad = " << Tad << nl << endl;
 */
-        scalar Ha =  reactants.Ha(P, T0)111;
+        scalar Ha =  reactants.Ha(P, T0);
         Info<< "Ha = " << Ha << nl << endl;
 
     }
